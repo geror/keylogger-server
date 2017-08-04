@@ -1,13 +1,13 @@
-const express = require('express')
+const express = require('express');
 const bodyParser = require('body-parser');
-const app = express()  
-const port = 3000
+const app = express();
+const port = 3000;
 
 // app.use(bodyParser.json());	// support json encoded bodies
 app.use(bodyParser.text());			// support text/plain encoded bodies
 
 app.get('/', (req, res) => {
-  res.send('Hello from Express!')
+  res.send('Hello from Express')
 });
 
 app.post('/', function(req, res){
